@@ -16,9 +16,9 @@ $.fn.mousetip = function(tip, x, y) {
         $(tip, this).hide().removeAttr('style');
     
     }).mousemove(function(e) {
-        
-        var mouseX = e.pageX + (x || 10);
-        var mouseY = e.pageY + (y || 10);
+        var offset = $(this).offset();
+        var mouseX = e.pageX + (x || 10) - offset.left;
+        var mouseY = e.pageY + (y || 10) - offset.top;
     
         $(tip, this).show().css({
             
