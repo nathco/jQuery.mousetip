@@ -21,25 +21,25 @@ See the live demo: [code.nath.co/mousetip](http://code.nath.co/mousetip)
 **jQuery**
 ```javascript
 $(function() {
-    
+
     // Default
     $('div').mousetip('.tip');
-        
+
     // Custom Position
     $('div').mousetip('.tip', 20, 30);
-    
+
 });
-``` 
+```
 
 **CSS**
 ```css
 span.tip {
-    
+
     /* Required */
-    position: absolute;
+    position: fixed;
     z-index: 2;
     display: none;
-    
+
     /* Optional */
     font-size: 15px;
     max-width: 150px;
@@ -48,7 +48,7 @@ span.tip {
     border-radius: 3px;
     box-shadow: 0 1px 2px #666;
     background: #FD0;
-} 
+}
 ```
 
 ## Feedback
